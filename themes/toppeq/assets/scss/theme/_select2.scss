@@ -1,0 +1,72 @@
+.select2-container.select2-container--default {
+    max-width: 380px !important;
+    width: 100% !important;
+    outline: 0;
+    .selection{
+        .select2-selection{
+            height: 80px;
+            &--single{
+                border-radius: 7px;
+                background-color: var(--select-bg-color);
+                border: 0;
+                outline: 0;
+            }
+            &__rendered{
+                line-height: 80px;
+                font-size: 20px;
+                font-weight: normal;
+                color: var(--select-text-color);
+                padding-left: 12px;
+                padding-right: 12px;
+                @media (max-width: 767px) {
+                    line-height: 50px;
+                    font-size: 16px;
+                }
+            }
+            &__arrow{
+                height: 80px;
+                right: 20px;
+                b{
+                    border-color: #aeaeae transparent transparent transparent !important;
+                    border-style: solid !important;
+                    border-width: 15px 8px 0 8px !important;
+                    margin-top: -10px;
+                    @media (max-width: 767px) {
+                        border-width: 10px 8px 0 8px !important;
+                        margin-top: -5px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    height: 50px;
+                }
+            }
+            @media (max-width: 767px) {
+                height: 50px;
+            }
+        }
+    }
+ }
+
+.select2-container--open{
+    .select2-dropdown{
+        border-radius: 7px;
+        background-color: var(--select-bg-color);
+        border: 0;
+        .select2-results{
+            .select2-results__options{
+                .select2-results__option{
+                    padding: 9px 12px;
+                    &--highlighted{
+                        background-color: var(--select-highlight-color);
+                        color: var(--select-text-color);
+                    }
+                    &[aria-selected=true]{
+                        background-color: var(--select-highlight-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 

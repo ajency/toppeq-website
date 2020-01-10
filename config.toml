@@ -1,0 +1,5 @@
+baseURL = "https://ajency.github.io/toppeq-website/"
+languageCode = "en-us"
+title = "Toppeq"
+theme = "toppeq"
+publishDir = "docs"

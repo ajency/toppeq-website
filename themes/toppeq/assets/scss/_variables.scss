@@ -1,0 +1,23 @@
+$primary: theme-color("primary");
+$secondary: theme-color("secondary");
+
+$link-color: theme-color("primary");
+$link-hover-color: lighten(theme-color("primary"), 20%);
+
+$font-family-base: 'Nunito Sans', sans-serif;
+$font-family-heading: 'Nunito Sans', sans-serif;
+
+$text-silver: rgba(152, 152, 152, 0.4);
+$input-border: #979797;
+$black-1: #121212;
+$title-color: #272727;
+
+$sky-blue: #87ceeb;
+$orange: #dd7649;
+$orange-1: #f4a24c; 
+$orange-2: #ed8967;
+$ight-pink: #ebdecb;
+$light-blue: #c1dbd0;
+$grey-blue: #95aca4;
+$yellow: #ffe264;
+

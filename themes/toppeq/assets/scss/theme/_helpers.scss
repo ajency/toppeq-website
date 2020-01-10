@@ -1,0 +1,40 @@
+.list-style-none{
+    list-style: none;
+}
+
+.i-right{
+    border: solid var(--card-text-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.p{
+    &-t{
+        &-15{
+            padding-top: 15px;
+        }
+    }
+    &-15{
+        padding: 15px;
+    }
+}
+
+.f{
+    &-15{
+        font-size: 15px !important;
+    }
+    &-22{
+        font-size: 22px !important;
+    }
+}
+
+.text{
+    &-underline{
+        text-decoration: underline;
+    }
+}
