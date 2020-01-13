@@ -2,12 +2,19 @@
  
  <div class="mainSlider">
    <div class="item a">
-   	<img src="{{"images/NLP01.png" | relURL }}" width="100%;">
+   	<picture>
+   	  <source media="(orientation: landscape)" srcset="{{"images/Section1Slider1.png" | relURL }}">
+   	  <source media="(orientation: portrait)" srcset="{{"images/Section1Slider1Mobile.png" | relURL }}">
+   		<img src="{{"images/Section1Slider1.png" | relURL }}">
+   	</picture>
    </div>
    <div class="item b">
-     <h2>How are you today?</h2></div>
-   <div class="item c">
-     <h2>That is Interesting!</h2></div>
+     <picture>
+   	  <source media="(orientation: landscape)" srcset="{{"images/Section1Slider2.png" | relURL }}">
+   	  <source media="(orientation: portrait)" srcset="{{"images/Section1Slider2Mobile.png" | relURL }}">
+   		<img src="{{"images/Section1Slider2.png" | relURL }}">
+   	</picture>
+ 	</div>
  </div>
 
  more content here

@@ -7926,46 +7926,42 @@ header {
 
 .mainSlider .item {
   width: 100%;
-  position: relative; }
-  .mainSlider .item.c {
-    background-color: #325D7F; }
-  .mainSlider .item.b {
-    background-color: #F2727F; }
-  .mainSlider .item.a {
-    background-color: #F9B294; }
-  .mainSlider .item h2 {
-    color: #fff;
-    font-size: 8vw;
-    font-weight: 400;
-    line-height: 1.1;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0; }
+  position: relative;
+  background-image: linear-gradient(125deg, #330d3f -27%, #000000); }
+  .mainSlider .item img {
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    height: 100%; }
 
 .slick-dots {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 2%; }
+  bottom: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
   .slick-dots li {
     list-style: none;
-    margin: 15px 0; }
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+    .slick-dots li.slick-active {
+      border-radius: 50%;
+      border: 1px solid white; }
   .slick-dots button {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    padding: 0;
+    border: 2px solid black;
+    width: 12px;
+    height: 12px;
     border: none;
     background-color: #fff;
     text-indent: -9999px;
     outline: 0; }
-    .slick-dots button:hover {
-      background-color: #000; }
 
 .slick-slide {
   height: 100vh !important; }
