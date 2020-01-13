@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/screens/home/</loc>
+    <lastmod>2020-01-06T12:34:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/screens/</loc>
+    <lastmod>2020-01-06T12:34:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/screens/style-guide/</loc>
+    <lastmod>2020-01-06T12:34:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/</loc>
+    <lastmod>2020-01-06T12:34:20+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/toppeq-website/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
