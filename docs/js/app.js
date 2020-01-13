@@ -5,19 +5,6 @@ $(document).ready(function () {
         arrows: false,
         dots: true        
     });
-
-    $(".hamburger-menu").click(function(e) {
-		e.preventDefault();
-        $(".site-menu").addClass("visible");
-        $("body").addClass("overflow-hidden");
-    });
-    
-    $(".menu-close-btn").click(function(e) {
-		e.preventDefault();
-        $(".site-menu").removeClass("visible");
-        $("body").removeClass("overflow-hidden");
-	});
-
     
 	$('.pageSlider').slick({
 		dots: true,
@@ -31,4 +18,17 @@ $(document).ready(function () {
 		prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
 		nextArrow:'<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
 	});
+
+    $(".hamburger-menu").click(function(e) {
+		e.preventDefault();
+        $(".site-menu").addClass("visible");
+        $("body").addClass("overflow-hidden");
+    });
+    
+    $(".menu-close-btn").click(function(e) {
+		e.preventDefault();
+        $(".site-menu").removeClass("visible");
+        $("body").removeClass("overflow-hidden");
+	});
+
 });
