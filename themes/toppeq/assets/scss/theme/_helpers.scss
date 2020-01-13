@@ -38,3 +38,25 @@
         text-decoration: underline;
     }
 }
+.w{
+    &-50{
+        width: 50%;
+    }
+    &-100{
+        width: 100%;
+    }
+    &-780{
+        @media (min-width: 768px){
+            max-width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &-980{
+       @media (min-width: 991px){
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
