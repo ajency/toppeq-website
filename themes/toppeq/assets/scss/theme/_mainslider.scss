@@ -1,5 +1,4 @@
 .mainSlider {
-  
   .item {
     width: 100%;
     position: relative;
@@ -53,4 +52,88 @@
 }
 .slick-slide {
     height: 100vh !important;
+}
+
+.pageSlider{   
+  position: relative;
+  margin-bottom: 4rem;
+  .block{
+    position: absolute;
+    top: 40%;  
+    left: 0;
+    .btn{
+      border-radius: 0px 30px 30px 0px;
+      .circle{
+        border: 1px solid $dark;
+        border-radius: 30px;
+        padding: 4px 7px 0px;
+      } 
+    }
+    @media (max-width: 767px){
+      position: unset;
+      text-align: center;
+    }      
+  }
+
+  .slick{
+    position: relative;
+    &-dots{
+      li{
+        margin: 0 0.5rem;
+      }
+      button{
+        border: 2px solid black;
+        border: none;
+        background-color: $gray-600;
+        text-indent: -9999px;
+      }
+      @media (min-width: 992px){
+        bottom: -45px;
+        right: 25%;
+        text-align: right;
+      }
+    }
+    &-active{
+      button{
+        background-color: black;
+      }
+    }
+    &-arrow{
+      position: absolute;
+      bottom: -50px;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 30px;
+      padding: 9px 18px;
+      z-index: 1;
+      &:focus{
+        outline: 0;
+      }
+      @media (max-width: 991px){
+        bottom: 40%;
+      }
+    }
+    &-next{
+      right: 10%;
+      @media (max-width: 991px){
+        right: 0;
+      }
+    }
+    &-prev{
+      right: 4%;
+      @media (max-width: 991px){
+        left: 0;
+      }
+    }
+    &-slide{
+      img{
+        float: right;
+        @media (max-width: 991px){
+          float: none;
+          margin: auto;
+          height: 600px;
+        }
+      }
+    }
+  }
 }
