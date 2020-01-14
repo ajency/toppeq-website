@@ -12,8 +12,6 @@ $(document).ready(function () {
 		speed: 500,
 		slidesToShow:3,
 		slidesToScroll: 3,
-		autoplay: true,
-		autoplaySpeed: 2000,
 		arrows: true,
 		prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
 		nextArrow:'<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
