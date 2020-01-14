@@ -54,30 +54,55 @@
     height: 100vh !important;
 }
 
-.pageSlider{   
-  position: relative;
-  margin-bottom: 4rem;
-  .block{
-    position: absolute;
-    top: 40%;  
-    left: 0;
-    .btn{
-      border-radius: 0px 30px 30px 0px;
-      .circle{
-        border: 1px solid $dark;
-        border-radius: 30px;
-        padding: 4px 7px 0px;
-      } 
+.pageSlider{
+  .item{
+    .thumb{
+      position: relative;
+      z-index: 1;
+      img{
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
     }
-    @media (max-width: 767px){
-      position: unset;
-      text-align: center;
-    }      
+    .overlay{
+      a{
+        bottom: 0;
+        display: flex;
+        left: 0;
+        width: 100%;
+        padding: 15px 30px;
+        position: absolute;
+        z-index: 1;
+        align-items: center;
+        transition: all 0.4s ease;
+        border-top: 2px solid $orange-1;
+        h4{
+          color: white;
+          font-weight: 600;
+        }
+        &:after{
+          background: black none repeat scroll 0 0;
+          bottom: 0;
+          content: "";
+          height: 100%;
+          left: 0;
+          opacity: 0.7;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+        }
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
   }
-
   .slick{
     position: relative;
     &-dots{
+      bottom: -45px;
       li{
         margin: 0 0.5rem;
       }
@@ -87,11 +112,6 @@
         background-color: $gray-600;
         text-indent: -9999px;
       }
-      @media (min-width: 992px){
-        bottom: -45px;
-        right: 25%;
-        text-align: right;
-      }
     }
     &-active{
       button{
@@ -100,40 +120,31 @@
     }
     &-arrow{
       position: absolute;
-      bottom: -50px;
-      background: transparent;
-      border: 1px solid black;
+      top: 45%;
+      background: white;
       border-radius: 30px;
+      box-shadow: 0px 0px 1px 1px $light-grey;
+      border: 1px solid $gray-200;
       padding: 9px 18px;
       z-index: 1;
       &:focus{
         outline: 0;
       }
-      @media (max-width: 991px){
-        bottom: 40%;
-      }
+
+    }
+
+    &-prev{
+      right: auto;
+      left: -15px;
     }
     &-next{
-      right: 10%;
-      @media (max-width: 991px){
-        right: 0;
-      }
-    }
-    &-prev{
-      right: 4%;
-      @media (max-width: 991px){
-        left: 0;
-      }
+      left: auto;
+      right: -15px;
     }
     &-slide{
-      img{
-        float: right;
-        @media (max-width: 991px){
-          float: none;
-          margin: auto;
-          height: 600px;
-        }
-      }
+      height: auto !important;
+      margin-right: 15px;
+      margin-left: 15px;
     }
   }
 }
