@@ -1,5 +1,5 @@
 .logo{
-    width: 240px;
+    width: 200px;
     a{
         // color: var(--font-color);
         color: #fff;
@@ -26,7 +26,7 @@ header{
     position: absolute;
     z-index: 10;
     width: 100%;
-    // transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     &.sticky{
         position: fixed;
         top: 0;
@@ -220,9 +220,9 @@ header{
     }
 }
 
-.sticky ~ #content {
-    padding-top: 202px;
-    @media (max-width: 991px) {
-        padding-top: 114px;
-    }
-}
+// .sticky ~ #content {
+//     padding-top: 202px;
+//     @media (max-width: 991px) {
+//         padding-top: 114px;
+//     }
+// }
