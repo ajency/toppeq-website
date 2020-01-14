@@ -209,7 +209,7 @@ hr.line-separator{
         padding-top: 100px;
         .sub-text{
             width: 500px;
-            height: 50vh;
+            height: 56vh;
             @media (max-width: 767px){
                 height: 20vh;
                 width: 100%;
@@ -224,7 +224,7 @@ hr.line-separator{
         margin-bottom: 1rem;
         background: white;
     }
-    @media (min-with: 1024px){
+    @media (min-width: 1024px){
         background-size: 400px;
     }
     @media (max-width: 767px){
