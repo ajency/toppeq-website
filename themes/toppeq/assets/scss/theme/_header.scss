@@ -1,13 +1,23 @@
 .logo{
-    width: 100px;
+    width: 240px;
     a{
         // color: var(--font-color);
         color: #fff;
+        vertical-align: middle;
     }
     img{
         max-width: 100%;
         width: 100%;
         height: auto;   
+    }
+    .normal-logo{
+        display: block;
+    }
+    .sticky-logo{
+        display: none;
+    }
+    @media (max-width: 991px) {
+        width: 100px;
     }
 }
 
@@ -16,7 +26,27 @@ header{
     position: absolute;
     z-index: 10;
     width: 100%;
-    @media (max-width: 768px) {
+    // transition: all .3s ease-in-out;
+    &.sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        .logo{
+            .normal-logo{
+                display: none;
+            }
+            .sticky-logo{
+                display: block;
+            }
+        }
+        .hamburger-menu{
+            .bar {
+                background-color: #000;
+            }
+        }
+    }
+    @media (max-width: 991px) {
         padding: 45px 0;
     }
 }
@@ -80,6 +110,7 @@ header{
         background-color: #fff;
         margin: 6px 0;
         transition: 0.4s;
+        border-radius: 4px;
     }
     .bar1{
         margin-top: 0;
@@ -184,5 +215,12 @@ header{
     @media (max-width: 768px) {
         top: 55px;
         right: 25px;
+    }
+}
+
+.sticky ~ #content {
+    padding-top: 202px;
+    @media (max-width: 991px) {
+        padding-top: 114px;
     }
 }

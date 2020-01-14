@@ -7775,20 +7775,39 @@ hr.line-separator {
       padding: 30px; } }
 
 .logo {
-  width: 100px; }
+  width: 240px; }
   .logo a {
-    color: #fff; }
+    color: #fff;
+    vertical-align: middle; }
   .logo img {
     max-width: 100%;
     width: 100%;
     height: auto; }
+  .logo .normal-logo {
+    display: block; }
+  .logo .sticky-logo {
+    display: none; }
+  @media (max-width: 991px) {
+    .logo {
+      width: 100px; } }
 
 header {
   padding: 80px 65px;
   position: absolute;
   z-index: 10;
   width: 100%; }
-  @media (max-width: 768px) {
+  header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff; }
+    header.sticky .logo .normal-logo {
+      display: none; }
+    header.sticky .logo .sticky-logo {
+      display: block; }
+    header.sticky .hamburger-menu .bar {
+      background-color: #000; }
+  @media (max-width: 991px) {
     header {
       padding: 45px 0; } }
 
@@ -7838,7 +7857,8 @@ header {
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
-    transition: 0.4s; }
+    transition: 0.4s;
+    border-radius: 4px; }
   .hamburger-menu .bar1 {
     margin-top: 0;
     width: 47px;
@@ -7923,6 +7943,12 @@ header {
     .menu-close-btn {
       top: 55px;
       right: 25px; } }
+
+.sticky ~ #content {
+  padding-top: 202px; }
+  @media (max-width: 991px) {
+    .sticky ~ #content {
+      padding-top: 114px; } }
 
 footer {
   background-color: #dee2e6; }
@@ -8139,6 +8165,14 @@ footer {
     margin-left: auto;
     margin-right: auto; } }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + #content {
+  padding-top: 202px; }
+
 .mainSlider .item {
   width: 100%;
   position: relative;
@@ -8186,7 +8220,11 @@ footer {
       font-weight: 400;
       padding: 20px 70px;
       border: 1px solid #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all .3s ease-in-out; }
+      .mainSlider .item-text a:hover {
+        background: #fff;
+        color: #000; }
       @media (max-width: 1600px) {
         .mainSlider .item-text a {
           font-size: 18px;
@@ -8249,6 +8287,9 @@ footer {
   @media (max-width: 767px) {
     .mainSlider .item.a .item-text {
       bottom: 65%; } }
+  @media (min-width: 1200px) {
+    .mainSlider .item.a .item-text h1 {
+      text-align: right; } }
 
 #content .slick-initialized .slick-slide {
   display: flex;

@@ -50,6 +50,11 @@
         padding: 20px 70px;
         border: 1px solid #fff;
         text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover{
+          background: #fff;
+          color: #000;
+        }
         @media (max-width: 1600px) {
           font-size: 18px;
           padding: 15px 50px;
@@ -121,6 +126,15 @@
       .item-text{
         @media (max-width: 767px) {
           bottom: 65%;
+        }
+      }
+    }
+    &.a{
+      .item-text{
+        h1{
+          @media (min-width: 1200px) {
+            text-align: right;
+          }
         }
       }
     }
