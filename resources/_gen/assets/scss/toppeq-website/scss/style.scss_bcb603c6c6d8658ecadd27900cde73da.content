@@ -7718,7 +7718,7 @@ hr.line-separator {
     padding-top: 130px; }
     .why-toppeq .heading .sub-text {
       width: 500px;
-      height: 70vh; }
+      height: 50vh; }
       @media (max-width: 767px) {
         .why-toppeq .heading .sub-text {
           height: 20vh;
@@ -7730,6 +7730,9 @@ hr.line-separator {
   @media (max-width: 767px) {
     .why-toppeq {
       background: none; } }
+
+.form {
+  background-color: #f8f9fa; }
 
 .logo {
   width: 100px; }

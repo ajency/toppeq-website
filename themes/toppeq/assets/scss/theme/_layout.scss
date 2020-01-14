@@ -206,7 +206,7 @@ hr.line-separator{
         padding-top: 130px;
         .sub-text{
             width: 500px;
-            height: 70vh;
+            height: 50vh;
             @media (max-width: 767px){
                 height: 20vh;
                 width: 100%;
@@ -222,4 +222,7 @@ hr.line-separator{
     @media (max-width: 767px){
         background: none;
     }
+}
+.form{
+    background-color: $gray-100;
 }
