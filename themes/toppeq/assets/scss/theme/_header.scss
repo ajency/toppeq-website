@@ -32,6 +32,8 @@ header{
         top: 0;
         width: 100%;
         background: #fff;
+        padding-top: 40px;
+        padding-bottom: 40px;
         .logo{
             .normal-logo{
                 display: none;
@@ -41,7 +43,7 @@ header{
             }
         }
         .hamburger-menu{
-            .bar {
+            > div {
                 background-color: #000;
             }
         }
