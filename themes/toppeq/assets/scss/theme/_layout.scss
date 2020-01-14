@@ -203,18 +203,16 @@ hr.line-separator{
     background: url('../images/why-toppeq.png') no-repeat;
     background-position-x: right;
     .heading{
-        padding-top: 100px;
+        padding-top: 130px;
         .sub-text{
-            width: 400px;
-            height: 65vh;
+            width: 500px;
+            height: 50vh;
             @media (max-width: 767px){
                 height: 20vh;
                 width: 100%;
             }
         }
-        @media (max-width: 767px){
-            padding: 30px 0;
-        }
+
     }
     .text-block{
         box-shadow: 0px 0px 10px 0px $light-grey;
@@ -224,4 +222,7 @@ hr.line-separator{
     @media (max-width: 767px){
         background: none;
     }
+}
+.form{
+    background-color: $gray-100;
 }
