@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screens on Toppeq</title>
@@ -17,6 +17,15 @@
       <pubDate>Mon, 06 Jan 2020 12:34:20 +0530</pubDate>
       
       <guid>https://ajency.github.io/toppeq-website/screens/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Homepage</title>
+      <link>https://ajency.github.io/toppeq-website/screens/homepage/</link>
+      <pubDate>Mon, 06 Jan 2020 12:34:20 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/toppeq-website/screens/homepage/</guid>
       <description></description>
     </item>
     
