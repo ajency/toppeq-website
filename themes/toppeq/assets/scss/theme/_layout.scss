@@ -199,11 +199,14 @@ hr.line-separator{
         margin-bottom: 15px;
     }
 }
+.seperator{
+    width: 400px;
+}
 .why-toppeq{
     background: url('../images/why-toppeq.png') no-repeat;
     background-position-x: right;
     .heading{
-        padding-top: 130px;
+        padding-top: 100px;
         .sub-text{
             width: 500px;
             height: 50vh;
@@ -212,15 +215,21 @@ hr.line-separator{
                 width: 100%;
             }
         }
-
+        @media (max-width: 767px){
+            padding: 20px 0;
+        }
     }
     .text-block{
         box-shadow: 0px 0px 10px 0px $light-grey;
         margin-bottom: 1rem;
         background: white;
     }
+    @media (min-with: 1024px){
+        background-size: 400px;
+    }
     @media (max-width: 767px){
         background: none;
+
     }
 }
 .form{
