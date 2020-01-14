@@ -1,21 +1,37 @@
 {{ define "main" }}
  
- <div class="mainSlider">
-   <div class="item a">
-   	<picture>
-   	  <source media="(orientation: landscape)" srcset="{{"images/slider_1.png" | relURL }}">
-   	  <source media="(orientation: portrait)" srcset="{{"images/Section1Slider1Mobile.png" | relURL }}">
-   		<img src="{{"images/Section1Slider1.png" | relURL }}">
-   	</picture>
-   </div>
-   <div class="item b">
-     <picture>
-   	  <source media="(orientation: landscape)" srcset="{{"images/slider_1.png" | relURL }}">
-   	  <source media="(orientation: portrait)" srcset="{{"images/Section1Slider2Mobile.png" | relURL }}">
-   		<img src="{{"images/Section1Slider2.png" | relURL }}">
-   	</picture>
- 	</div>
- </div>
+<div class="mainSlider">
+	<div class="item a">
+		<picture>
+			<source media="(orientation: landscape)" srcset="{{"images/Sider_1.png" | relURL }}">
+			<source media="(orientation: portrait)" srcset="{{"images/MobileSlider1.png" | relURL }}">
+		<img src="{{"images/Sider_1.png" | relURL }}">
+		</picture>
+		<div class="item-text">
+			<h1 class="">BRINGING CLARITY <br>TO EQUITY.</h1>
+			<a href="#">Learn More</a>
+		</div>
+		<div class="item-count">
+			<hr></hr>
+			<h1 class="slide-count">01</h1>
+		</div>
+	</div>
+	<div class="item b">
+		<picture>
+			<source media="(orientation: landscape)" srcset="{{"images/Slider_2.png" | relURL }}">
+			<source media="(orientation: portrait)" srcset="{{"images/MobileSlider2.png" | relURL }}">
+			<img src="{{"images/Slider_2.png" | relURL }}">
+		</picture>
+		<div class="item-text">
+			<h1>SMARTLY TRACK <br >YOUR MONEY.</h1>
+			<a href="#">Learn More</a>
+		</div>
+		<div class="item-count">
+			<hr></hr>
+			<h1 class="slide-count">02</h1>
+		</div>
+	</div>
+</div>
 
 <div class="container">
 	<h2 class="text-center my-3 font-weight-bold"> Our Services </h2>
