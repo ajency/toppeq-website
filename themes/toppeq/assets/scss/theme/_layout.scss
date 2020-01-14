@@ -199,30 +199,77 @@ hr.line-separator{
         margin-bottom: 15px;
     }
 }
+.seperator{
+    width: 400px;
+    @media (max-width: 767px){
+        width: 60%;
+    }
+}
 .why-toppeq{
     background: url('../images/why-toppeq.png') no-repeat;
     background-position-x: right;
     .heading{
-        padding-top: 130px;
+        padding-top: 100px;
         .sub-text{
             width: 500px;
-            height: 50vh;
+            height: 56vh;
             @media (max-width: 767px){
                 height: 20vh;
                 width: 100%;
             }
         }
-
+        @media (max-width: 767px){
+            padding: 20px 0;
+        }
     }
     .text-block{
         box-shadow: 0px 0px 10px 0px $light-grey;
         margin-bottom: 1rem;
         background: white;
     }
+    @media (min-width: 1024px){
+        background-size: 400px;
+    }
     @media (max-width: 767px){
         background: none;
+
     }
 }
 .form{
     background-color: $gray-100;
+    h2{
+        @media(max-width: 767px){
+            font-size: 25px;
+        }
+    }
+    h4{
+        color: $light-grey-1;
+         @media(max-width: 767px){
+            font-size: 15px;
+        }
+    }
+    .form-block{
+        .form-control{
+            border-bottom: 1px solid $gray-500;
+            border-radius: 0;
+            height: 58px;
+            margin: 15px 0;
+            max-width: 100%;
+            @media (max-width: 767px){
+                margin: 30px 0;
+            }
+        }
+        .submit{
+            background-color: $orange-3;
+            color: white;
+            border-radius: 0;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 15px 0;
+            min-width: 200px;
+        }
+    }
+    @media (max-width: 767px){
+        padding: 30px;
+    }
 }
