@@ -8165,14 +8165,6 @@ footer {
     margin-left: auto;
     margin-right: auto; } }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-.sticky + #content {
-  padding-top: 202px; }
-
 .mainSlider .item {
   width: 100%;
   position: relative;

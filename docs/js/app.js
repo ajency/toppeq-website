@@ -47,4 +47,26 @@ $(document).ready(function () {
         $("body").removeClass("overflow-hidden");
 	});
 
+
+	$('.item-text a[href*="#"]').on('click', function(e) {
+		e.preventDefault();	  
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top,
+		  },
+		  500,
+		  'linear'
+		)
+	});
+
+	window.onscroll = function() {stickyHeader()};
+	var header = document.getElementById("site-header");
+	var sticky = header.offsetTop;
+	function stickyHeader() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
+
 });
