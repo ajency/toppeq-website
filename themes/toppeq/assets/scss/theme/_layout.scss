@@ -213,8 +213,16 @@ hr.line-separator{
         .sub-text{
             width: 500px;
             height: 56vh;
+            @media (max-width: 991px){
+                height: 70vh;
+                width: 320px;
+            }
             @media (max-width: 767px){
-                height: 20vh;
+                height: 90vh;
+                width: 227px;
+            }
+            @media (max-width: 574px){
+                height: 36vh;
                 width: 100%;
             }
         }
@@ -230,7 +238,7 @@ hr.line-separator{
     @media (min-width: 1024px){
         background-size: 400px;
     }
-    @media (max-width: 767px){
+    @media (max-width: 574px){
         background: none;
 
     }
