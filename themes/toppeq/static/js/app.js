@@ -33,11 +33,12 @@ $(document).ready(function () {
 		  ]
 	});
 	var animateHTML = function() {
-	var elems,
+	var elems, elemTop,
 	windowHeight
 
 	var init = function() {
 		elems = document.getElementsByClassName("hidden");
+	 	elemTop = document.getElementsByClassName("hidden_block");
 		windowHeight = window.innerHeight;
 		_addEventHandlers();
 	}
@@ -47,12 +48,18 @@ $(document).ready(function () {
 		window.addEventListener("resize", init)
 	}
 	var _checkPosition = function() {
-		for ( var i = 0; i < elems.length; i++ ) {
+	for ( var i = 0; i < elems.length; i++ ) {
 		var posFromTop = elems[i].getBoundingClientRect().top;
 		if ( posFromTop - windowHeight <= 0) { 
 			elems[i].className = elems[i].className.replace( "hidden", "in-left" );
 		}
 	}    
+	for ( var i = 0; i < elemTop.length; i++ ) {
+		var posFromTop = elemTop[i].getBoundingClientRect().top;
+		if ( posFromTop - windowHeight <= 0) { 
+			elemTop[i].className = elemTop[i].className.replace( "hidden_block", "in-top" );
+		}
+	}   
 }
 
   return {

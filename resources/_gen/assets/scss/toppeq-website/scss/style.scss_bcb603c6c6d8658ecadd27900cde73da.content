@@ -7717,6 +7717,16 @@ hr.line-separator {
     .seperator {
       width: 60%; } }
 
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(-20px);
+    transform: translatey(-20px); } }
+
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -7737,7 +7747,7 @@ hr.line-separator {
     -webkit-transform: translatex(0);
     transform: translatex(0); } }
 
-.hidden {
+.hidden, .hidden_block {
   opacity: 0; }
 
 .in-left {
@@ -7753,6 +7763,16 @@ hr.line-separator {
 .in-right {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.in-top {
+  -webkit-animation-name: fadeInTop;
+  animation-name: fadeInTop;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
