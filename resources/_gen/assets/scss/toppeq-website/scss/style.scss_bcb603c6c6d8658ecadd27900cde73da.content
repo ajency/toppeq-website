@@ -7798,7 +7798,8 @@ hr.line-separator {
           margin: 0 20px; } }
     .homeSlider .block .btn {
       border-radius: 0px 30px 30px 0px;
-      border: 1px solid black; }
+      border: 1px solid black;
+      border-left: 0; }
       .homeSlider .block .btn .circle {
         border: 1px solid #343a40;
         border-radius: 30px;
