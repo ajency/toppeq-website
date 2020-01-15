@@ -284,7 +284,7 @@ hr.line-separator{
             width: 500px;
             height: 50vh;
             @media (max-width: 767px){
-                height: 20vh;
+                height: auto;
                 width: 100%;
             }
         }
