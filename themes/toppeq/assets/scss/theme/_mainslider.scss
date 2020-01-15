@@ -324,3 +324,28 @@
     }
   }
 }
+
+.mainSlider { 
+  .item {
+    display: none;
+    height: 100vh;
+    &:first-child{
+      display: block;
+    }
+  }
+  picture, .item-text, .item-count{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+  }
+  &.slick-initialized{
+    .item{
+      display: block;
+    }
+    picture, .item-text, .item-count{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

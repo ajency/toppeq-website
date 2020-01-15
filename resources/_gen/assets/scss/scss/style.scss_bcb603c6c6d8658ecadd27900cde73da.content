@@ -8576,6 +8576,25 @@ footer {
     margin-right: 15px;
     margin-left: 15px; }
 
+.mainSlider .item {
+  display: none;
+  height: 100vh; }
+  .mainSlider .item:first-child {
+    display: block; }
+
+.mainSlider picture, .mainSlider .item-text, .mainSlider .item-count {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease; }
+
+.mainSlider.slick-initialized .item {
+  display: block; }
+
+.mainSlider.slick-initialized picture, .mainSlider.slick-initialized .item-text, .mainSlider.slick-initialized .item-count {
+  visibility: visible;
+  opacity: 1; }
+
 /* Slider */
 .slick-slider {
   position: relative;
