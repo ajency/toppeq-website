@@ -488,13 +488,13 @@ hr.line-separator{
         &-next{
             right: 4%;
             @media(max-width: 767px){
-                right: 20%;
+                right: 8%;
             }
         }
         &-prev{
             right: 12%;
             @media(max-width: 767px){
-                right: 40%;
+                right: 30%;
             }
         }
         &-slide{

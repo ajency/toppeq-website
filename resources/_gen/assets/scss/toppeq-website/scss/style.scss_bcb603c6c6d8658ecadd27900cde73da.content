@@ -7964,12 +7964,12 @@ hr.line-separator {
       right: 4%; }
       @media (max-width: 767px) {
         .homeSlider .slick-next {
-          right: 20%; } }
+          right: 8%; } }
     .homeSlider .slick-prev {
       right: 12%; }
       @media (max-width: 767px) {
         .homeSlider .slick-prev {
-          right: 40%; } }
+          right: 30%; } }
     .homeSlider .slick-slide {
       align-items: normal !important;
       justify-content: flex-start;
