@@ -7763,7 +7763,7 @@ hr.line-separator {
   to {
     opacity: 1; } }
 
-.hidden, .hidden_block {
+.hidden, .hidden_block, .hidden_right {
   opacity: 0; }
 
 .in-left {
@@ -7771,50 +7771,50 @@ hr.line-separator {
   animation-name: fadeInLeft;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 .in-right {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 .in-top {
   -webkit-animation-name: fadeInTop;
   animation-name: fadeInTop;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 .in-bottom {
   -webkit-animation-name: fadeInBottom;
   animation-name: fadeInBottom;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 .in {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 .why-toppeq {
   background: url("../images/why-toppeq.png") no-repeat;

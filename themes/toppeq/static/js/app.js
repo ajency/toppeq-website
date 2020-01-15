@@ -18,6 +18,14 @@ $(document).ready(function () {
 			$('.item picture').addClass('in');
 		}, 10);
 	});
+	$(".homeSlider").on("beforeChange", function() {
+		$('.block').removeClass('in-left');
+		$('img').removeClass('in-right');
+		setTimeout(function() {
+			$('.block').addClass('in-left');
+			$('img').addClass('in-right');
+		}, 10);
+	});
 	
 	$('.pageSlider').slick({
 		dots: true,
@@ -46,12 +54,13 @@ $(document).ready(function () {
 		  ]
 	});
 	var animateHTML = function() {
-	var elems, elemTop,
+	var elems, elemTop,elemRight,
 	windowHeight
 
 	var init = function() {
 		elems = document.getElementsByClassName("hidden");
 	 	elemTop = document.getElementsByClassName("hidden_block");
+	 	elemRight = document.getElementsByClassName("hidden_right");
 		windowHeight = window.innerHeight;
 		_addEventHandlers();
 	}
@@ -71,6 +80,12 @@ $(document).ready(function () {
 		var posFromTop = elemTop[i].getBoundingClientRect().top;
 		if ( posFromTop - windowHeight <= 0) { 
 			elemTop[i].className = elemTop[i].className.replace( "hidden_block", "in-top" );
+		}
+	} 
+	for ( var i = 0; i < elemRight.length; i++ ) {
+		var posFromTop = elemRight[i].getBoundingClientRect().top;
+		if ( posFromTop - windowHeight <= 0) { 
+			elemRight[i].className = elemRight[i].className.replace( "hidden_right", "in-right" );
 		}
 	}   
 }
