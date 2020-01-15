@@ -8165,7 +8165,8 @@ header {
   position: absolute;
   top: 73px;
   right: 90px;
-  padding: 0; }
+  padding: 0;
+  margin-right: -9px; }
   @media (max-width: 768px) {
     .menu-close-btn {
       top: 55px;
