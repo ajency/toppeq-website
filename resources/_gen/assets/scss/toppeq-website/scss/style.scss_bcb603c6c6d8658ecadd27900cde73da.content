@@ -7717,6 +7717,49 @@ hr.line-separator {
     .seperator {
       width: 60%; } }
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(-20px);
+    transform: translatex(-20px); } }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-30px);
+    transform: translatex(-30px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    transform: translatex(0); } }
+
+.hidden {
+  opacity: 0; }
+
+.in-left {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.in-right {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
 .why-toppeq {
   background: url("../images/why-toppeq.png") no-repeat;
   background-position-x: right; }
@@ -7777,7 +7820,12 @@ hr.line-separator {
     font-size: 20px;
     padding: 10px 20px;
     margin: 15px 0;
-    min-width: 200px; }
+    min-width: 200px;
+    transition: all 0.3s ease-in; }
+    .form .form-block .submit:hover {
+      border: 1px solid #f16624;
+      background-color: transparent;
+      color: #f16624; }
   @media (max-width: 767px) {
     .form {
       padding: 30px; } }
@@ -8035,6 +8083,10 @@ footer {
     padding: 0.5rem 0; }
     footer ul.footer-links li {
       list-style-type: none; }
+      footer ul.footer-links li a {
+        color: black; }
+        footer ul.footer-links li a:hover {
+          text-decoration: none; }
       @media (max-width: 525px) {
         footer ul.footer-links li {
           padding: 0.5rem 0 !important; } }
@@ -8049,6 +8101,8 @@ footer {
   footer .social-media {
     display: flex;
     justify-content: center; }
+    footer .social-media a {
+      color: black; }
     @media (min-width: 768px) {
       footer .social-media {
         justify-content: flex-end; } }
