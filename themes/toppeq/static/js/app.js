@@ -24,7 +24,7 @@ $(document).ready(function () {
 	});
 	$(".homeSlider").on("beforeChange", function() {
 		$('.block').removeClass('in-left');
-		$('img-block').removeClass('in-right');
+		$('.img-block').removeClass('in-right');
 		setTimeout(function() {
 			$('.block').addClass('in-left');
 			$('.img-block').addClass('in-right');
@@ -108,8 +108,9 @@ animateHTML().init();
 		slidesToShow:1,
 		slidesToScroll: 1,
 		arrows: true,
-		prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
-		nextArrow:'<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+		adaptiveHeight: true,
+		prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-angle-left fa-2x font-weight-bold"></i></button>',
+		nextArrow:'<button type="button" class="slick-next"><i class="fa fa-angle-right fa-2x font-weight-bold"></i></button>',
 	});
 
     $(".hamburger-menu").click(function(e) {

@@ -7888,7 +7888,7 @@ hr.line-separator {
 
 .homeSlider {
   position: relative;
-  margin-bottom: 100px; }
+  margin-bottom: 150px; }
   .homeSlider .block {
     position: absolute;
     top: 36%;
@@ -7934,7 +7934,7 @@ hr.line-separator {
   .homeSlider .slick {
     position: relative; }
     .homeSlider .slick-dots {
-      bottom: -45px;
+      bottom: -70px;
       right: 25%;
       text-align: right; }
       .homeSlider .slick-dots li {
@@ -7951,11 +7951,11 @@ hr.line-separator {
           text-align: center; } }
     .homeSlider .slick-arrow {
       position: absolute;
-      bottom: -50px;
+      bottom: -75px;
       background: transparent;
-      border: 1px solid black;
+      border: 4px solid black;
       border-radius: 30px;
-      padding: 9px 18px;
+      padding: 2px 14px;
       z-index: 1; }
       .homeSlider .slick-arrow:focus {
         outline: 0; }
@@ -7965,7 +7965,7 @@ hr.line-separator {
         .homeSlider .slick-next {
           right: 20%; } }
     .homeSlider .slick-prev {
-      right: 10%; }
+      right: 12%; }
       @media (max-width: 767px) {
         .homeSlider .slick-prev {
           right: 40%; } }
@@ -8165,7 +8165,8 @@ header {
   position: absolute;
   top: 73px;
   right: 90px;
-  padding: 0; }
+  padding: 0;
+  margin-right: -9px; }
   @media (max-width: 768px) {
     .menu-close-btn {
       top: 55px;
