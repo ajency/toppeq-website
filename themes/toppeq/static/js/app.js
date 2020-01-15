@@ -4,8 +4,12 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
 		dots: true,
-		// draggable: false,
-		swipe: false        
+		infinite: true,
+		speed: 1000,
+		fade: true,
+		cssEase: 'linear',
+		// autoplay: true,
+		//swipe: false        
 	});
 	
 	$(".mainSlider").on("beforeChange", function() {
