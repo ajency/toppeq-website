@@ -7895,11 +7895,12 @@ hr.line-separator {
     left: 0; }
     .homeSlider .block h2 {
       text-align: left;
-      margin: 0 20px;
+      margin-left: 70px;
       font-size: 32px; }
       @media (max-width: 991px) {
         .homeSlider .block h2 {
-          font-size: 25px; } }
+          margin-left: 0;
+          font-size: 24px; } }
       @media (max-width: 767px) {
         .homeSlider .block h2 {
           margin: 0 0;
@@ -7908,7 +7909,7 @@ hr.line-separator {
       border-radius: 0px 30px 30px 0px;
       border: 1px solid black;
       border-left: 0;
-      padding: 15px 40px;
+      padding: 15px 30px 15px 88px;
       font-size: 16px; }
       .homeSlider .block .btn .circle {
         border: 1px solid #343a40;
@@ -7917,7 +7918,7 @@ hr.line-separator {
         margin-left: 15px; }
       @media (max-width: 991px) {
         .homeSlider .block .btn {
-          margin: 20px 0 40px;
+          margin: 10px 0 40px;
           padding: 10px 20px;
           font-size: 14px; } }
       @media (max-width: 767px) {
@@ -7980,9 +7981,12 @@ hr.line-separator {
           content: '';
           display: block;
           clear: both; }
-        @media (max-width: 575px) {
+        @media (min-width: 1024px) {
           .homeSlider .slick-slide img {
-            height: 275px; } }
+            height: 600px; } }
+        @media (max-width: 475px) {
+          .homeSlider .slick-slide img {
+            height: 330px; } }
         @media (max-width: 767px) {
           .homeSlider .slick-slide img.first {
             float: none;
