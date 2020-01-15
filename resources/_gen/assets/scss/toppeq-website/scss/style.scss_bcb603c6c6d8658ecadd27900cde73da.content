@@ -7771,8 +7771,8 @@ hr.line-separator {
   animation-name: fadeInLeft;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
@@ -7781,8 +7781,8 @@ hr.line-separator {
   animation-name: fadeInRight;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
@@ -7791,8 +7791,8 @@ hr.line-separator {
   animation-name: fadeInTop;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
@@ -7801,8 +7801,8 @@ hr.line-separator {
   animation-name: fadeInBottom;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
@@ -7811,8 +7811,8 @@ hr.line-separator {
   animation-name: fadeIn;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
