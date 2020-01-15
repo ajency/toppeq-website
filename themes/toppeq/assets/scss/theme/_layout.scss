@@ -403,29 +403,44 @@ hr.line-separator{
     margin-bottom: 100px;
     .block{
         position: absolute;
-        top: 40%;  
+        top: 36%;  
         left: 0;
         h2{
             text-align: left;
-            margin: 0 60px;
+            margin: 0 20px;
+            font-size: 32px;
+            @media (max-width: 991px){
+                font-size: 25px;
+            }
             @media (max-width: 767px){
+                margin: 0 0;
                 font-size: 18px;
-                margin: 0 20px;
             }
         }
         .btn{
             border-radius: 0px 30px 30px 0px;
             border: 1px solid black;
             border-left: 0;
-          .circle{
-            border: 1px solid $dark;
-            border-radius: 30px;
-            padding: 4px 7px 0px;
-          }
-          @media (max-width: 767px){
-            margin: 20px 0 40px;
-            font-size: 12px;
-          } 
+            padding: 15px 40px;
+            font-size: 16px;
+            .circle{
+                border: 1px solid $dark;
+                border-radius: 30px;
+                padding: 4px 7px 0px;
+                margin-left: 15px;
+            }
+            @media (max-width: 991px){
+                margin: 20px 0 40px;
+                padding: 10px 20px;
+                font-size: 14px;
+            } 
+            @media (max-width: 767px){
+                margin: 10px 0 20px;
+                font-size: 12px;
+            } 
+        }
+        @media (max-width: 991px){
+            top: 25%;
         }
         @media (max-width: 767px){
           position: unset;
@@ -452,7 +467,7 @@ hr.line-separator{
                 background-color: $gray-600;
                 text-indent: -9999px;
             }
-            @media (max-width: 991px){
+            @media (max-width: 767px){
                 text-align: center;
             }
         }
@@ -470,13 +485,13 @@ hr.line-separator{
         }
         &-next{
             right: 4%;
-            @media(max-width: 991px){
+            @media(max-width: 767px){
                 right: 20%;
             }
         }
         &-prev{
             right: 10%;
-            @media(max-width: 991px){
+            @media(max-width: 767px){
                 right: 40%;
             }
         }
@@ -487,11 +502,20 @@ hr.line-separator{
             img{
                 float: right;
                 max-width: 100% !important;
-                height: auto;
+                height: 400px;
                 &:after{
                     content: '';
                     display: block;
                     clear: both;
+                }
+                @media (max-width: 575px){
+                    height: 275px;
+                }
+                &.first{
+                    @media (max-width: 767px){
+                        float: none;
+                        margin: auto;
+                    }
                 }
             }
         }
@@ -499,13 +523,9 @@ hr.line-separator{
 }
 .block{
     &-1{
-        @media (max-width: 767px){
-            padding-left: 0;
-        }
+        padding-left: 0;
     }
     &-2{
-        @media (max-width: 767px){
-            padding-right: 0;
-        }
+        padding-right: 0;
     }
 }
