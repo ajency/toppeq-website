@@ -24,7 +24,7 @@ $(document).ready(function () {
 	});
 	$(".homeSlider").on("beforeChange", function() {
 		$('.block').removeClass('in-left');
-		$('img-block').removeClass('in-right');
+		$('.img-block').removeClass('in-right');
 		setTimeout(function() {
 			$('.block').addClass('in-left');
 			$('.img-block').addClass('in-right');
