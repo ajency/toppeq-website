@@ -7987,7 +7987,7 @@ hr.line-separator {
             height: 60vh; } }
         @media (max-width: 575px) {
           .homeSlider .slick-slide img {
-            height: 25vh; } }
+            height: 40vh; } }
         @media (max-width: 767px) {
           .homeSlider .slick-slide img.first {
             float: none;
