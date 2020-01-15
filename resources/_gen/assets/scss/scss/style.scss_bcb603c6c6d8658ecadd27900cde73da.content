@@ -7747,6 +7747,22 @@ hr.line-separator {
     -webkit-transform: translatex(0);
     transform: translatex(0); } }
 
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(30px);
+    transform: translatey(30px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    transform: translatey(0); } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .hidden, .hidden_block {
   opacity: 0; }
 
@@ -7773,6 +7789,26 @@ hr.line-separator {
 .in-top {
   -webkit-animation-name: fadeInTop;
   animation-name: fadeInTop;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.in-bottom {
+  -webkit-animation-name: fadeInBottom;
+  animation-name: fadeInBottom;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.in {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
@@ -8463,7 +8499,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  overflow: hidden; }
 
 .slick-dots {
   position: absolute;
