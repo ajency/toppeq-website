@@ -7977,7 +7977,7 @@ hr.line-separator {
       .homeSlider .slick-slide img {
         float: right;
         max-width: 100% !important;
-        height: 400px; }
+        height: 40vh; }
         .homeSlider .slick-slide img:after {
           content: '';
           display: block;
@@ -7992,6 +7992,10 @@ hr.line-separator {
           .homeSlider .slick-slide img.first {
             float: none;
             margin: auto; } }
+  @media (max-width: 767px) {
+    .homeSlider {
+      margin-top: 50px;
+      margin-bottom: 150px; } }
 
 .block-1 {
   padding-left: 0; }
