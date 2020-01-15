@@ -504,17 +504,17 @@ hr.line-separator{
             img{
                 float: right;
                 max-width: 100% !important;
-                height: 40vh;
+                height: 100vh;
                 &:after{
                     content: '';
                     display: block;
                     clear: both;
                 }
                 @media (min-width: 1024px){
-                    height: 600px;
+                    height: 60vh;
                 }
-                @media (max-width: 475px){
-                    height: 330px;
+                @media (max-width: 575px){
+                    height: 25vh;
                 }
                 &.first{
                     @media (max-width: 767px){

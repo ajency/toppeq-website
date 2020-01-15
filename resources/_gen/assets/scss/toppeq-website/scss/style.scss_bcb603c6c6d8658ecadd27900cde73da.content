@@ -7977,17 +7977,17 @@ hr.line-separator {
       .homeSlider .slick-slide img {
         float: right;
         max-width: 100% !important;
-        height: 40vh; }
+        height: 100vh; }
         .homeSlider .slick-slide img:after {
           content: '';
           display: block;
           clear: both; }
         @media (min-width: 1024px) {
           .homeSlider .slick-slide img {
-            height: 600px; } }
-        @media (max-width: 475px) {
+            height: 60vh; } }
+        @media (max-width: 575px) {
           .homeSlider .slick-slide img {
-            height: 330px; } }
+            height: 25vh; } }
         @media (max-width: 767px) {
           .homeSlider .slick-slide img.first {
             float: none;
