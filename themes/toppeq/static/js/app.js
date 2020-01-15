@@ -4,8 +4,18 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         dots: true        
-    });
-    
+	});
+	
+	$(".mainSlider").on("beforeChange", function() {
+		$('.item-text').removeClass('in-left');
+		$('.item-count').removeClass('in-bottom');
+		$('.item picture').removeClass('in');
+		setTimeout(function() {
+			$('.item-text').addClass('in-left');
+			$('.item-count').addClass('in-bottom');
+			$('.item picture').addClass('in');
+		}, 10);
+    })
 	$('.pageSlider').slick({
 		dots: true,
 		infinite: true,
