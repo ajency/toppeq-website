@@ -21,6 +21,12 @@
       @media (min-width: 992px) and (max-width: 1199px) {
         max-width: 80vw;
       }
+      @media only screen 
+      and (min-device-width : 320px) 
+      and (max-device-width : 991px) 
+      and (orientation : landscape) { 
+        max-width: 60vw;
+      }
     }
     &-text{
       max-width: 617px;
