@@ -7798,7 +7798,7 @@ hr.line-separator {
           width: 227px; } }
       @media (max-width: 574px) {
         .why-toppeq .heading .sub-text {
-          height: 36vh;
+          height: auto;
           width: 100%; } }
     @media (max-width: 767px) {
       .why-toppeq .heading {
