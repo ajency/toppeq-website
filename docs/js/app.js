@@ -6,7 +6,7 @@ $(document).ready(function () {
 		dots: true,
 		infinite: true,
 		speed: 1000,
-		// fade: true,
+		fade: true,
 		cssEase: 'linear',
 		// autoplay: true,
 		//swipe: false        
@@ -20,7 +20,7 @@ $(document).ready(function () {
 			$('.item-text').addClass('in-left');
 			$('.item-count').addClass('in-bottom');
 			$('.item picture').addClass('in');
-		}, 400);
+		}, 10);
 	});
 	$(".homeSlider").on("beforeChange", function() {
 		$('.block').removeClass('in-left');
