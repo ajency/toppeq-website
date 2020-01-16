@@ -7888,7 +7888,7 @@ hr.line-separator {
 
 .homeSlider {
   position: relative;
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 180px; }
   .homeSlider .block {
     position: absolute;
@@ -7994,7 +7994,6 @@ hr.line-separator {
             margin: auto; } }
   @media (max-width: 767px) {
     .homeSlider {
-      margin-top: 50px;
       margin-bottom: 150px; } }
 
 .block-1 {
