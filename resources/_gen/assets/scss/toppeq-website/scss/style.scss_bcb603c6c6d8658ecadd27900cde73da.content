@@ -8421,7 +8421,8 @@ footer {
         max-width: 80vw; } }
     @media (min-width: 399px) and (max-width: 767px) {
       .mainSlider .item img {
-        height: 64vh; } }
+        height: 64vh;
+        object-fit: contain; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 991px) and (orientation: landscape) {
       .mainSlider .item img {
         max-width: 60vw; } }
